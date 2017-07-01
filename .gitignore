@@ -1,0 +1,4 @@
+.idea/*
+.vscode/*
+/node_modules/*
+testHerokuApp/node_modules/*
