@@ -1,7 +1,21 @@
 import React from 'react';
 
-export default function ContactList(){
-    return(
-        <div><p>No contacts here</p></div>
+export default function ContactList({ contacts }) {
+    const list = () => {
+        return contacts.map(contact => {
+            return (
+                <li key={contact._id}>
+                {contact.name.first} {contact.name.last}
+                </li>
+            );
+        });
+    };
+
+    return (
+        <div>
+        <ul>
+            {list()}
+        </ul>
+        </div>
     );
 }
