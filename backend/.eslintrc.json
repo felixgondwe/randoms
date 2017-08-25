@@ -5,6 +5,14 @@
     "mocha": true
   },
   "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
   "rules": {
     "indent": [
       "error",
